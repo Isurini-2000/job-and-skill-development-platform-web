@@ -1,9 +1,12 @@
+import LoginPage from '../pages/LoginPage/LoginPage'
 import './App.css'
 
 function App() {
 
   return (
-    <h1>hiiiiiiiiiiiii</h1>
+    <>
+    <LoginPage/>
+    </>
   )
 }
 

@@ -24,7 +24,7 @@ const LoginPage = () => {
 
   return (
     <Box
-      sx={{
+      sx={{ 
         height: "100vh",
         display: "flex",
         justifyContent: "center",

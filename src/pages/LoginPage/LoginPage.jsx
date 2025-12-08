@@ -29,7 +29,7 @@ const LoginPage = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#e8f5e9", 
+        backgroundColor: "#e8f5e9",
       }}
     >
       <Paper
@@ -55,6 +55,19 @@ const LoginPage = () => {
           margin="normal"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          sx={{
+            '& .MuiOutlinedInput-root': {
+              '&:hover fieldset': {
+                borderColor: '#66bb6a',
+              },
+              '&.Mui-focused fieldset': {
+                borderColor: '#4caf50',
+              },
+            },
+            '& .MuiInputLabel-root.Mui-focused': {
+              color: '#4caf50',
+            },
+          }}
         />
 
         <TextField
@@ -65,6 +78,19 @@ const LoginPage = () => {
           type={showPassword ? "text" : "password"}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          sx={{
+            '& .MuiOutlinedInput-root': {
+              '&:hover fieldset': {
+                borderColor: '#66bb6a',
+              },
+              '&.Mui-focused fieldset': {
+                borderColor: '#4caf50',
+              },
+            },
+            '& .MuiInputLabel-root.Mui-focused': {
+              color: '#4caf50',
+            },
+          }}
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
@@ -77,55 +103,62 @@ const LoginPage = () => {
         />
 
         <Box sx={{ textAlign: 'right', mt: 1 }}>
-              <Link
-                href="#"
-                variant="body2"
-                sx={{
-                  color: '#4caf50',
-                  textDecoration: 'none',
-                  '&:hover': {
-                    textDecoration: 'underline',
-                    color: '#2e7d32'
-                  }
-                }}
-              >
-                Forgot password?
-              </Link>
-            </Box>
+          <Link
+            href="#"
+            variant="body2"
+            sx={{
+              color: '#4caf50',
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+                color: '#2e7d32'
+              }
+            }}
+          >
+            Forgot password?
+          </Link>
+        </Box>
 
         <Button
           variant="contained"
+          type="submit"
           fullWidth
           sx={{
             mt: 3,
+            mb: 2,
             py: 1.5,
             backgroundColor: "#43a047",
-            "&:hover": { backgroundColor: "#388e3c" },
+            '&:hover': {
+              bgcolor: '#45a049',
+              transform: 'translateY(-2px)',
+              boxShadow: 4
+            },
+            transition: 'all 0.3s ease'
           }}
           onClick={handleLogin}
         >
-          Login
+          Login 
         </Button>
 
         <Box sx={{ textAlign: 'center', mt: 2 }}>
-              <Typography variant="body2" color="text.secondary">
-                Don't have an account?{' '}
-                <Link
-                  href="#"
-                  sx={{
-                    color: '#4caf50',
-                    textDecoration: 'none',
-                    fontWeight: 600,
-                    '&:hover': {
-                      textDecoration: 'underline',
-                      color: '#2e7d32'
-                    }
-                  }}
-                >
-                  Register
-                </Link>
-              </Typography>
-            </Box>
+          <Typography variant="body2" color="text.secondary">
+            Don't have an account?{' '}
+            <Link
+              href="#"
+              sx={{
+                color: '#4caf50',
+                textDecoration: 'none',
+                fontWeight: 600,
+                '&:hover': {
+                  textDecoration: 'underline',
+                  color: '#2e7d32'
+                }
+              }}
+            >
+              Register
+            </Link>
+          </Typography>
+        </Box>
       </Paper>
     </Box>
   );

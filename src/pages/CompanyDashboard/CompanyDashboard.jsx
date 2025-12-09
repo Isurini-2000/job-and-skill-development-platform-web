@@ -20,7 +20,7 @@ export default function CompanyDashboard() {
         <Box
             sx={{
                 p: 4,
-                backgroundColor: "#f6fff7",
+                backgroundColor: "#e8f5e9",
                 minHeight: "100vh",
             }}
         >

@@ -1,3 +1,4 @@
+import CompanyAllJob from '../pages/CompanyAllJob/CompanyAllJob'
 import CompanyDashboard from '../pages/CompanyDashboard/CompanyDashboard'
 import LoginPage from '../pages/LoginPage/LoginPage'
 import RegisterPage from '../pages/RegisterPage/RegisterPage'
@@ -9,7 +10,8 @@ function App() {
     <>
     {/* <LoginPage/> */}
     {/* <RegisterPage/> */}
-    <CompanyDashboard/>
+    {/* <CompanyDashboard/> */}
+    <CompanyAllJob/>
 
     </>
   )

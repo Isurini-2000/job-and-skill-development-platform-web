@@ -3,19 +3,19 @@ import {
     Box,
     Typography,
     TextField,
-    Button,
     Card,
     CardContent,
     Avatar,
     Stack,
     Chip,
     Grid,
+    InputAdornment,
 } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
-import { SearchIcon } from "lucide-react";
+import { Search } from "lucide-react";
 
 export default function CompanyAllJob() {
-    const [search, setSearch] = useState("");
+    const [searchTerm, setSearchTerm] = useState('');
 
     const jobs = [
         {
@@ -79,11 +79,14 @@ export default function CompanyAllJob() {
             status: "Deactive",
         },
     ];
+    
 
+    const filteredJobs = jobs.filter(job =>
+        job.companyName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        job.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        job.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-    const handleSearch = () => {
-        console.log("Searching for:", search);
-    };
 
     return (
         <Box sx={{ p: 4, backgroundColor: "#e8f5e9", minHeight: "100vh" }}>
@@ -103,8 +106,8 @@ export default function CompanyAllJob() {
                 <TextField
                     variant="outlined"
                     placeholder="Search jobs by company, category, or job type..."
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
                     sx={{
                         backgroundColor: "#ffffff",
                         borderRadius: 2,
@@ -122,23 +125,18 @@ export default function CompanyAllJob() {
                         },
 
                     }}
-                />
-
-                <Button
-                    variant="contained"
-                    onClick={handleSearch}
-                    startIcon={<SearchIcon />}
-                    sx={{
-                        backgroundColor: "#2e7d32",
-                        px: 3,
-                        "&:hover": { backgroundColor: "#1b5e20" },
+                    InputProps={{
+                        startAdornment: (
+                            <InputAdornment position="start">
+                                <Search size={20} color="#4caf50" />
+                            </InputAdornment>
+                        ),
                     }}
-                >
-                </Button>
+                />
             </Stack>
 
             <Grid container spacing={8} justifyContent="space-evenly" >
-                {jobs.map((job) => (
+                {filteredJobs.map((job) => (
                     <Grid item xs={12} sm={6} md={6} key={job.id}>
                         <Card
                             sx={{

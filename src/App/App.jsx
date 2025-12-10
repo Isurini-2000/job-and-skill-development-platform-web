@@ -1,4 +1,5 @@
 import CompanyAllJob from '../pages/CompanyAllJob/CompanyAllJob'
+import CompanyApplications from '../pages/CompanyApplications/CompanyApplications'
 import CompanyDashboard from '../pages/CompanyDashboard/CompanyDashboard'
 import CompanyMyJob from '../pages/CompanyMyJob/CompanyMyJob'
 import LoginPage from '../pages/LoginPage/LoginPage'
@@ -13,7 +14,8 @@ function App() {
     {/* <RegisterPage/> */}
     {/* <CompanyDashboard/> */}
     {/* <CompanyAllJob/> */}
-    <CompanyMyJob/>
+    {/* <CompanyMyJob/> */}
+    <CompanyApplications/>
 
     </>
   )

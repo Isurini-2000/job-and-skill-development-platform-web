@@ -5,6 +5,7 @@ import CompanyMyJob from '../pages/CompanyMyJob/CompanyMyJob'
 import CompanyProfile from '../pages/CompanyProfile/CompanyProfile'
 import LoginPage from '../pages/LoginPage/LoginPage'
 import RegisterPage from '../pages/RegisterPage/RegisterPage'
+import TrainerDashboard from '../pages/TrainerDashboard/TrainerDashboard'
 import './App.css'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     {/* <CompanyAllJob/> */}
     {/* <CompanyMyJob/> */}
     {/* <CompanyApplications/> */}
-    <CompanyProfile/>
+    {/* <CompanyProfile/> */}
+    <TrainerDashboard/>
 
     </>
   )

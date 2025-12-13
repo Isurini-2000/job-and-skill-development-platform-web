@@ -95,7 +95,7 @@ export default function CompanyAllJob() {
                 fontWeight="bold"
                 sx={{ mb: 3, color: "#2e7d32" }}
             >
-                Company Job Overview
+                Company Jobs Overview
             </Typography>
 
             <Stack

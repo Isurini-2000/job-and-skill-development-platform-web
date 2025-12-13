@@ -7,21 +7,23 @@ import LoginPage from '../pages/LoginPage/LoginPage'
 import RegisterPage from '../pages/RegisterPage/RegisterPage'
 import TrainerAllCourse from '../pages/TrainerAllCourse/TrainerAllCourse'
 import TrainerDashboard from '../pages/TrainerDashboard/TrainerDashboard'
+import TrainerMyCourse from '../pages/TrainerMyCourse/TrainerMyCourse'
 import './App.css'
 
 function App() {
 
   return (
     <>
-    {/* <LoginPage/> */}
-    {/* <RegisterPage/> */}
-    {/* <CompanyDashboard/> */}
-    {/* <CompanyAllJob/> */}
-    {/* <CompanyMyJob/> */}
-    {/* <CompanyApplications/> */}
-    {/* <CompanyProfile/> */}
-    {/* <TrainerDashboard/> */}
-    <TrainerAllCourse/>
+      {/* <LoginPage/> */}
+      {/* <RegisterPage/> */}
+      {/* <CompanyDashboard/> */}
+      {/* <CompanyAllJob/> */}
+      {/* <CompanyMyJob/> */}
+      {/* <CompanyApplications/> */}
+      {/* <CompanyProfile/> */}
+      {/* <TrainerDashboard/> */}
+      {/* <TrainerAllCourse/> */}
+      <TrainerMyCourse />
 
     </>
   )

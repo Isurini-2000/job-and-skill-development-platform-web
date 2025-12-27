@@ -31,7 +31,7 @@ import StarIcon from '@mui/icons-material/Star';
 import { Eye } from 'lucide-react';
 
 
-const CompanyApplications = () => {
+const TrainerEntrolls = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filterStatus, setFilterStatus] = useState('all');
     const [selectedApplicant, setSelectedApplicant] = useState(null);
@@ -164,7 +164,7 @@ const CompanyApplications = () => {
                 fontWeight="bold"
                 sx={{ mb: 3, color: "#2e7d32" }}
             >
-                Applications
+                Entrolls
             </Typography>
 
             <Stack
@@ -196,7 +196,7 @@ const CompanyApplications = () => {
                                     },
                                 }}
                             >
-                                <MenuItem value="all">All Applications</MenuItem>
+                                <MenuItem value="all">All Entrolls</MenuItem>
                                 <MenuItem value="pending">Pending</MenuItem>
                                 <MenuItem value="selected">Selected</MenuItem>
                                 <MenuItem value="rejected">Rejected</MenuItem>
@@ -439,7 +439,7 @@ const CompanyApplications = () => {
 
                             <Box>
                                 <Typography variant="subtitle2" sx={{ mb: 2, color: '#2E7D32', fontWeight: 600 }}>
-                                    Change Application Status
+                                    Change Entrolls Status
                                 </Typography>
                                 <Stack direction="row" spacing={2} justifyContent="center">
                                     <Button
@@ -521,4 +521,4 @@ const CompanyApplications = () => {
     );
 };
 
-export default CompanyApplications;
+export default TrainerEntrolls;

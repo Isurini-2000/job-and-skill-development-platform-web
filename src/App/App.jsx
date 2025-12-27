@@ -9,6 +9,7 @@ import TrainerAllCourse from '../pages/TrainerAllCourse/TrainerAllCourse'
 import TrainerDashboard from '../pages/TrainerDashboard/TrainerDashboard'
 import TrainerEntrolls from '../pages/TrainerEntrolls/TrainersEntrolls'
 import TrainerMyCourse from '../pages/TrainerMyCourse/TrainerMyCourse'
+import TrainerProfile from '../pages/TrainerProfile/TrainerProfile'
 import './App.css'
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       {/* <TrainerDashboard/> */}
       {/* <TrainerAllCourse/> */}
       {/* <TrainerMyCourse /> */}
-      <TrainerEntrolls/>
+      {/* <TrainerEntrolls/> */}
+      <TrainerProfile/>
 
     </>
   )

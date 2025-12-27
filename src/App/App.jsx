@@ -1,3 +1,4 @@
+import AdminDashboard from '../pages/AdminDashboard/AdminDashboard'
 import CompanyAllJob from '../pages/CompanyAllJob/CompanyAllJob'
 import CompanyApplications from '../pages/CompanyApplications/CompanyApplications'
 import CompanyDashboard from '../pages/CompanyDashboard/CompanyDashboard'
@@ -27,7 +28,8 @@ function App() {
       {/* <TrainerAllCourse/> */}
       {/* <TrainerMyCourse /> */}
       {/* <TrainerEntrolls/> */}
-      <TrainerProfile/>
+      {/* <TrainerProfile/> */}
+      <AdminDashboard/>
 
     </>
   )

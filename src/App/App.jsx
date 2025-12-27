@@ -7,6 +7,7 @@ import LoginPage from '../pages/LoginPage/LoginPage'
 import RegisterPage from '../pages/RegisterPage/RegisterPage'
 import TrainerAllCourse from '../pages/TrainerAllCourse/TrainerAllCourse'
 import TrainerDashboard from '../pages/TrainerDashboard/TrainerDashboard'
+import TrainerEntrolls from '../pages/TrainerEntrolls/TrainersEntrolls'
 import TrainerMyCourse from '../pages/TrainerMyCourse/TrainerMyCourse'
 import './App.css'
 
@@ -23,7 +24,8 @@ function App() {
       {/* <CompanyProfile/> */}
       {/* <TrainerDashboard/> */}
       {/* <TrainerAllCourse/> */}
-      <TrainerMyCourse />
+      {/* <TrainerMyCourse /> */}
+      <TrainerEntrolls/>
 
     </>
   )

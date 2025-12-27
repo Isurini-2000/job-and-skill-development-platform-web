@@ -18,7 +18,6 @@ import {
 import {
     Email,
     Phone,
-    Language,
     LocationOn,
     Facebook,
     Twitter,
